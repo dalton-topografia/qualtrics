@@ -1,23 +1,9 @@
-import os
-import requests
 
-# Setting user Parameters
-apiToken = 'mTYSGdCLc7l0B2do0OlRkSfn5hl0i6aodxL4a0hc'
-
-baseUrl = "https://ca1.qualtrics.com/inbound-event/v1/events/JSON/triggers?contextId=SV_0UQWx5vKXuo0Njn&userId=UR_agT2zaHAEZFLXvf&brandId=capgeminisandbox&triggerId=OC_1BWTISw8NkpQTbP";
-
-headers = {
-    "x-api-token": apiToken,
-    "Content-Type": "application/json"
-    }
-
-data = {
-    "firstName": "Test",
-    "lastName": "1",
-    "email": "test@mail.com",
-    "language": "EN",
-    "extRef": "99999"
-}
-
-response = requests.post(baseUrl, json=data, headers=headers)
-print(response.text)
+<html>
+ <head>
+  <title>Teste PHP</title>
+ </head>
+ <body>
+ <?php echo "<p>Olá Mundo</p>"; ?>
+ </body>
+</html>
